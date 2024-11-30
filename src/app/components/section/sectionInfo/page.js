@@ -1,60 +1,3 @@
-// "use client";
-// import React from "react";
-// import styled from "styled-components";
-// import videoFile from "./video/potr.mp4"
-
-// const AppWrapper = styled.div`
-// display: flex;
-// flex-1;
-// justify-content: space-between;
-// align-items: flex-start;
-// flex-wrap: wrap;
-// width: 100%;
-// height: 100vh;
-// background-color: aqua;
-// `;
-
-// const SectionRight = styled.div`
-// display: flex;
-// justify-content: space-between;
-// align-items: flex-start
-// width: 100%;
-// height: 100vh;
-// background-color: aqua;;
-// `;
-// // const iframe = styled.a`
-// //  border: none;
-// //   border-radius: 15px;
-// //   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-// // `;
-
-// const Imge = styled.div``;
-// const SectionLeft = styled.div``;
-
-// const SectionText = styled.div``;
-
-// const SectionInfo = styled.div``;
-
-// const App = () => {
-//   return (
-//     <AppWrapper>
-//      <SectionRight>
-//     <video width="600" height="400" controls>
-//       <source src={videoFile} type="video/mp4"/>
-//       Sizning brauziringiz
-//     </video>
-//     <Imge></Imge>
-//   </SectionRight>
-//   <SectionLeft>
-//     <SectionText></SectionText>
-//     <SectionInfo></SectionInfo>
-//   </SectionLeft>
-//     </AppWrapper>
-//   );
-// };
-
-// export default App;
-
 "use client";
 import React from "react";
 import styled from "styled-components";
@@ -67,37 +10,76 @@ const AppWrapper = styled.div`
   align-items: flex-start;
   flex-wrap: wrap;
   width: 100%;
-  height: 100vh;
-  background-color: #E0FFFF;
+  height: 55rem;
+  background-color: #e0ffff;
 `;
 
 const SectionRight = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 50%; 
+  justify-content: flex-start;
+  align-items: start;
+  flex-direction: column;
+  width: 50%;
   height: 100vh;
+  color: black;
+  padding-top: 50px;
 `;
-const Card = styled.div`
-// display: flex;
-// justify-content: flex-start;
-// align-items: center;
-// flex
+const SectionText = styled.h1`
+  color: black;
+  // margin: 25px;
+  font-size: 40px
+  // margin-left: 100px;
 
-width: 35rem;
-height: 13rem;
-border-radius: 20px;
-margin-top: 3rem;
-background-color: #87CEFA
+`;
+
+const SectionInfo = styled.div`
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // margin: 25px;
+  // margin-left: 100px;
+  font-size: 18px;
+  color: black;
+  line-height: 1.5;
+`;
+
+const SectionUl = styled.ul`
+  // display: flex;
+  // justify-content: center;
+  // align-items: start;
+  // flex-direction: column;
+  // margin-left: 100px;
+  font-size: 18px;
+  color: black;
+  list-style-type: disc;
+  line-height: 1.5;
+`;
+
+const Card = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-direction: column;
+  width: 35rem;
+  height: 13rem;
+  border-radius: 20px;
+  margin-top: 3rem;
+  background-color: #87cefa;
 `;
 
 const Title = styled.h5`
-color: #E0FFFF;
-margin: 25px;
-letter-spacing: 1px;
+  color: #e0ffff;
+  margin: 25px;
+  letter-spacing: 1px;
+  font-family: sans-serif;
 `;
-const TitleWrapper = styled.p`
-`
+const TitleWrapper = styled.h4`
+  font-family: sans-serif;
+  font-size: 18px;
+  margin: 25px;
+  letter-spacing: 1px;
+  color: #e0ffff;
+`;
 
 const SectionLeft = styled.div`
   display: flex;
@@ -115,25 +97,53 @@ const VideoWrapper = styled.video`
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 `;
 
-const SectionText = styled.div`
-  font-size: 16px;
-  color: white;
-`;
-
-const SectionInfo = styled.div`
-  font-size: 14px;
-  color: black;
-`;
-
 const App = () => {
   return (
     <AppWrapper>
       {/* O'ng qism */}
       <SectionRight>
-        <SectionText>Bu matn bo'lishi mumkin</SectionText>
-        <SectionInfo>Qo'shimcha ma'lumotlar bo'lishi mumkin</SectionInfo>
+        <SectionText>О компании</SectionText>
+        <SectionInfo>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, ipsum
+          esse. Necessitatibus sunt consequuntur ut, praesentium unde magni
+          cumque magnam eaque quisquam. Quas blanditiis quisquam hic ad enim
+          laudantium, neque voluptates consectetur, officia vero error!
+          Accusantium nemo quibusdam repudiandae tempore laboriosam vero omnis
+          placeat sit odio dignissimos. Porro, possimus exercitationem.
+        </SectionInfo>
+        <SectionInfo>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa,
+          omnis.
+        </SectionInfo>
+        <SectionUl>
+          <ol style={{ listStyleType: "disc" }}>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+            <li>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br />
+              Consectetur, quo! Lorem ipsum dolor, sit amet consectetur
+              <br />
+              adipisicing elit. In quae cum ullam quos fuga harum.
+            </li>
+            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+          </ol>
+          <SectionInfo>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa,
+            omnis.
+          </SectionInfo>
+          <ol style={{ listStyleType: "disc" }}>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+            <li>
+              Lorem ipsum dolor sit amet consectetur <br /> adipisicing elit.
+              Laborum, at. Lorem ipsum dolor, sit amet <br /> consectetur
+              adipisicing elit. In quae cum ullam quos fuga harum.
+            </li>
+            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+          </ol>
+        </SectionUl>
       </SectionRight>
-
       <SectionLeft>
         <VideoWrapper controls>
           <source src={VideoFile} type="Video/mp4" />
@@ -141,7 +151,11 @@ const App = () => {
         </VideoWrapper>
         <Card>
           <Title>ЗАПРОС СТАВКИ И УСЛОВИЙ ПОГРУЗОЧНО-ЗАГРОЗОЧНЫХ РАБОТ</Title>
-          <TitleWrapper> Зассчитайте моментально стоимось полных <br /> портавых услуг в порту VIZMA </TitleWrapper>
+          <TitleWrapper>
+            {" "}
+            Зассчитайте моментально стоимось полных <br /> портавых услуг в
+            порту VIZMA{" "}
+          </TitleWrapper>
         </Card>
       </SectionLeft>
     </AppWrapper>
