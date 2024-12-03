@@ -4,6 +4,7 @@ import ServiceCard from "./components/section/serviseCard/page";
 import Footer from "./components/footer/page";
 import Section from "./components/section/section/page";
 import SectionInfo from "./components/section/sectionInfo/page";
+import SectionNavosti from "./components/section/sectionNavosti/page";
 import "./globals.css"
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <ServiceCard/>
       <Section/> 
       <SectionInfo/>
+      <SectionNavosti/>
       <Footer />
        
     </div>

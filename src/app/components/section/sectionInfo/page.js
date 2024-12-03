@@ -10,7 +10,7 @@ const AppWrapper = styled.div`
   align-items: flex-start;
   flex-wrap: wrap;
   width: 100%;
-  height: 55rem;
+  height: 60rem;
   background-color: #e0ffff;
 `;
 
@@ -26,33 +26,25 @@ const SectionRight = styled.div`
 `;
 const SectionText = styled.h1`
   color: black;
-  // margin: 25px;
-  font-size: 40px
-  // margin-left: 100px;
+  font-size: 40px;
+  margin-left: 70px;
 
 `;
 
 const SectionInfo = styled.div`
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
-  // margin: 25px;
-  // margin-left: 100px;
   font-size: 18px;
   color: black;
   line-height: 1.5;
+  margin-left: 80px;
 `;
 
 const SectionUl = styled.ul`
-  // display: flex;
-  // justify-content: center;
-  // align-items: start;
-  // flex-direction: column;
-  // margin-left: 100px;
   font-size: 18px;
   color: black;
-  list-style-type: disc;
   line-height: 1.5;
+  padding: 10px;
+  margin-left: 45px;
+  line-height: 1.2;
 `;
 
 const Card = styled.div`
@@ -86,8 +78,8 @@ const SectionLeft = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 50%; /* Chap va o'ng tomonlar uchun teng kenglik */
-  height: 100vh;
+  width: 50%; 
+  height: 60rem;
 `;
 
 const VideoWrapper = styled.video`
@@ -111,36 +103,36 @@ const App = () => {
           Accusantium nemo quibusdam repudiandae tempore laboriosam vero omnis
           placeat sit odio dignissimos. Porro, possimus exercitationem.
         </SectionInfo>
-        <SectionInfo>
+        <SectionInfo style={{paddingTop: "15p"}}>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa,
           omnis.
         </SectionInfo>
-        <SectionUl>
-          <ol style={{ listStyleType: "disc" }}>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
-            <li>
+        <SectionUl> 
+          <ol style={{ listStyleType: "disc"}}>
+            <li style={{marginTop: "15px"}}>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li style={{marginTop: "15px"}}>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+            <li style={{marginTop: "15px"}}>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br />
               Consectetur, quo! Lorem ipsum dolor, sit amet consectetur
               <br />
               adipisicing elit. In quae cum ullam quos fuga harum.
             </li>
-            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
-            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+            <li style={{marginTop: "15px"}}>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+            <li style={{marginTop: "15px"}}>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
           </ol>
-          <SectionInfo>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa,
+          <SectionInfo style={{marginTop: "15px", marginLeft: "25px"}}>
+           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium, consectetur! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Culpa,
             omnis.
           </SectionInfo>
           <ol style={{ listStyleType: "disc" }}>
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
-            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
-            <li>
+            <li style={{marginTop: "15px"}}>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li style={{marginTop: "15px"}}>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+            <li style={{marginTop: "15px"}}>
               Lorem ipsum dolor sit amet consectetur <br /> adipisicing elit.
               Laborum, at. Lorem ipsum dolor, sit amet <br /> consectetur
               adipisicing elit. In quae cum ullam quos fuga harum.
             </li>
-            <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
+            <li style={{marginTop: "15px"}}>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</li>
           </ol>
         </SectionUl>
       </SectionRight>
@@ -152,9 +144,8 @@ const App = () => {
         <Card>
           <Title>ЗАПРОС СТАВКИ И УСЛОВИЙ ПОГРУЗОЧНО-ЗАГРОЗОЧНЫХ РАБОТ</Title>
           <TitleWrapper>
-            {" "}
             Зассчитайте моментально стоимось полных <br /> портавых услуг в
-            порту VIZMA{" "}
+            порту VIZMA
           </TitleWrapper>
         </Card>
       </SectionLeft>
